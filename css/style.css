@@ -1,6 +1,4 @@
-/*----------------------------------------
-common
-------------------------------------------*/
+@import url("reset.css");
 
 .holder{
 	width: 800px;
@@ -20,8 +18,228 @@ common
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	padding: 24px 21px 21px 21px;
+	box-sizing: border-box;
 	box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
 	border-radius: 10px;
 	background-color: #111a28;
+	font-size: 0;
+}
+.product:after{
+	clear: left;
+}
 
+.logo{
+	display: inline-block;
+	float: left;
+}
+
+.product__header:after{
+	content: "";
+	display: block;
+	clear: left;
+}
+
+.product__header{
+	margin-bottom: 20px;
+}
+
+.product__image,
+.product__manage{
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.product__image{
+	max-width: 360px;
+	width: 65%;
+	margin-right: 50px;
+}
+
+.product__manage{
+	width: 35%;
+}
+
+.product-image{
+	display: block;
+	min-height: 255px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.product-image__src{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc( (100% - 159px) / 2);
+	margin: 0 auto;
+}
+
+.bullets:after{
+	content: "";
+	display: block;
+	clear: left;
+}
+
+.bullets__item {
+    float: left;
+}
+
+
+.bullets__buttons:focus{
+	outline: none;
+}
+
+.bullets__buttons {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.bullets__buttons--active,
+.bullets__buttons:hover{
+	height: 12px;
+	width: 12px;
+	transition: all .3s ease;
+	cursor: pointer;
+	border: 2px solid rgba(255,255,255,.46);
+}
+
+.bullets__item:nth-of-type(1){
+	margin-left: 50%;
+}
+
+.bullets__item:nth-of-type(4n+1) .bullets__buttons{
+	background-color: #1f273f;
+}
+.bullets__item:nth-of-type(4n+2) .bullets__buttons{
+	background-color: #fff;
+}
+.bullets__item:nth-of-type(4n+3) .bullets__buttons{
+	background-color: #ed3333;
+}
+.bullets__item:nth-of-type(4n+4) .bullets__buttons{
+	background-color: #29e3ea;
+}
+
+
+
+.product-header{
+	color: #e1e1e1;
+	font-family: "Museo Sans Rounded";
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+.product-info{
+	opacity: 0.54;
+	color: #e1e1e1;
+	font-family: "Museo Sans Rounded";
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+
+/*---------------------------------------------
+stars
+-----------------------------------------------*/
+.stars{
+	margin-bottom: 20px;
+}
+.stars:after{
+	content:"";
+	display: block;
+	clear: left;
+}
+
+.stars__item{
+	float: left;
+}
+
+.stars__checkboxes {
+    visibility:hidden;
+    cursor:pointer;
+}
+.stars__checkboxes:before {
+   content: url("../img/star-gray.png");
+   position: absolute;
+   visibility:visible;
+   color:red;
+}
+.stars__checkboxes:checked:before {
+   content:  url("../img/star-golden.png");
+   position: absolute;
+}
+
+/*---------------------------------------------------
+type buttons
+----------------------------------------------------*/
+.product-types{
+	margin-bottom: 30px;
+}
+.product-types:after{
+	content: "";
+	display: block;
+	clear: left;
+}
+
+.product-type{
+  float: left;
+  width: 69px;
+  height: 32px;
+  padding-left: 14px;
+  background-color: transparent;
+  background: url("../img/arrow-down.png") no-repeat 84% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	color: #e1e1e1;
+	font-family: "Museo Sans Rounded";
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 18px;
+}
+.product-type:first-child{
+	margin-right: 2px;
+}
+.product-type:focus{
+	outline: none;
+}
+
+
+/*---------------------------------------------------
+buy button
+----------------------------------------------------*/
+.btn-buy{
+	display: block;
+	width: 184px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	background-color: #4c525a;
+	opacity: 0.26;
+	color: #e1e1e1;
+	font-family: "Museo Sans Rounded";
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 18px;
+	box-shadow: none;
+	transition: all .3s ease;
+}
+
+.btn-buy:hover{
+	cursor: pointer;
+	box-shadow: 0 0 30px rgba(255, 255, 0, 0.82);
+	transition: all .3s ease;
+}
+.btn-buy:focus{
+	outline: none;
 }
