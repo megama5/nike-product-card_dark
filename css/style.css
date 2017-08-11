@@ -1,0 +1,27 @@
+/*----------------------------------------
+common
+------------------------------------------*/
+
+.holder{
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	background: url("../img/bg-layer-3.png") center no-repeat,
+	 url("../img/bg-layer-6.png") center no-repeat,
+	 url("../img/bg-layer-5.png") center no-repeat #c5c5c8;
+	position: relative;
+}
+
+.product{
+	width: 686px;
+	height: 391px;
+	position: absolute;
+	top: calc( (100% - 391px) / 2 ) ;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+	border-radius: 10px;
+	background-color: #111a28;
+
+}
