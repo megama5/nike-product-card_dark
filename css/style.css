@@ -203,7 +203,8 @@ type buttons
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-	color: #e1e1e1;
+  color: #4f5560;
+  border-color: #4f5560;
 	font-family: "Museo Sans Rounded";
 	font-size: 14px;
 	font-weight: 100;
