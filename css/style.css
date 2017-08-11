@@ -109,7 +109,7 @@
 	transition: all .3s ease;
 	cursor: pointer;
   box-shadow: 0 0 0 2px rgba(255,255,255,.46);
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .bullets__item:nth-of-type(1){
@@ -203,7 +203,8 @@ type buttons
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-	color: #e1e1e1;
+  color: #4f5560;
+  border-color: #4f5560;
 	font-family: "Museo Sans Rounded";
 	font-size: 14px;
 	font-weight: 100;
