@@ -193,8 +193,11 @@ type buttons
 	clear: left;
 }
 
+.product-types__item{
+	float: left;
+}
 .product-type{
-  float: left;
+  /*float: left;*/
   width: 69px;
   height: 32px;
   padding-left: 14px;
